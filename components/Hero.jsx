@@ -1,13 +1,13 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
-import React,  { useState } from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import Button from "./Button";
 import Modal from "@/components/Modal";
 
 const Hero = () => {
   const { scrollY } = useScroll();
-  const imgTopPosition = useTransform(scrollY, [0, 400], ["680px", "140px"]);
+  const imgTopPosition = useTransform(scrollY, [0, 450], ["880px", "140px"]);
   const imgScale = useTransform(scrollY, [0, 50, 1300], [1, 1.1, 1]);
   const textOpacity = useTransform(scrollY, [0, 200], [1, 0]);
   const textScale = useTransform(scrollY, [0, 200], [1, 0.8]);
@@ -17,10 +17,9 @@ const Hero = () => {
   };
   const [isModalVisible, setIsModalVisible] = useState(false);
 
-  
   return (
     <>
-      <section id="hero" className="h-screen xl:h-[1500px] overflow-x-clip relative">
+      <section id="hero" className=" h-[900px] overflow-x-clip relative">
         <Header />
         <div className="container mx-auto h-full flex items-center xl:items-start">
           {/* text */}
