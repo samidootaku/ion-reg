@@ -39,7 +39,7 @@ const Modal = ({ isVisible, onClose }) => {
         >
           X
         </button>
-        <h2 className="text-2xl mb-4">Contact Form</h2>
+        <h2 className="text-2xl mb-4 text-black">Contact Form</h2>
         <form onSubmit={onSubmit} className="flex flex-col space-y-4">
           <input
             type="text"
@@ -54,7 +54,7 @@ const Modal = ({ isVisible, onClose }) => {
             className="border border-gray-300 p-2 rounded text-black"
           />
           <textarea
-            placeholder="Message"
+            placeholder="Message (Optional)"
             name="message"
             className="border border-gray-300 p-2 rounded text-black"
           ></textarea>
